@@ -11,9 +11,13 @@
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.2.6",
     "@sanity/image-url": "^0.140.22",
+    "@stripe/stripe-js": "^1.14.0",
     "groq": "^2.2.6",
     "next": "10.0.7",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "stripe": "^8.145.0",
+    "swr": "^0.5.5",
+    "use-shopping-cart": "^2.4.3"
   }
 }
