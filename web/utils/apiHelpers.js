@@ -29,6 +29,6 @@ export async function fetchPostJSON(url, data) {
 		});
 		return await response.json();
 	} catch (error) {
-		throw new Error(err.message);
+		throw new Error(error.message);
 	}
 }

@@ -25,8 +25,9 @@ export default function CartSummary() {
 		event.preventDefault();
 		setLoading(true);
 		// Send cart data to our nextjs serverless functions / API
+		console.log({ cartDetails });
 		const response = await fetchPostJSON(
-			'/api/checkout_session/cart',
+			'/api/checkout_sessions/cart',
 			cartDetails
 		);
 		if (response.statusCode === 500) {
