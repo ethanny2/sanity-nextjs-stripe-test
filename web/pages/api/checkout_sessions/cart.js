@@ -2,6 +2,7 @@ import { validateCartItems } from 'use-shopping-cart/src/serverUtil';
 import Stripe from 'stripe';
 import { client } from '../../../lib/sanity/client';
 import { merchQuery } from '../../../lib/sanity/merchQuery';
+
 // The actual server-side implementation of stripe; loadStripe is from
 // a stripe library to use it as an ESmodule; just loads in the script tag?
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
